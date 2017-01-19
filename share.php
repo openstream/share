@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<title>Private Share</title>
-	<meta name="description" content="">
+	<meta name="description" content="Secure way to share private information with other people.">
 	<link rel="stylesheet" href="styles.css">
 	<script src="js/jQuery.js"></script>
 	<script src="js/aes.js"></script>
@@ -15,6 +15,7 @@
 	   <div style="margin:40px;" align="center">
 		
 		<div class="head">Private Share</div>
+		<div class="tagline">powered by <a href="https://www.openstream.ch">openstream.ch</a></div>
 		<div style="height:40px;"></div>
 		
 		<div class="holder">
@@ -25,9 +26,9 @@
 			<div align="center">
 				<div class="radioButton" data-group="format" data-value="1800">30 Minutes</div>
 				<div class="radioButton" data-group="format" data-value="3600">1 Hour</div>
-				<div class="radioButton" data-group="format" data-value="21600" data-active="true">6 Hour</div>
+				<div class="radioButton" data-group="format" data-value="21600">6 Hour</div>
 				<div class="radioButton" data-group="format" data-value="86400">1 Day</div>
-				<div class="radioButton" data-group="format" data-value="259200">3 Day</div>
+				<div class="radioButton" data-group="format" data-value="259200" data-active="true">3 Day</div>
 				<div class="radioButton" data-group="format" data-value="604800">1 Week</div>
 				<div class="radioButton" data-group="format" data-value="2592000">1 Month</div>
 			</div>

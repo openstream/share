@@ -19,18 +19,18 @@
 		<div style="height:40px;"></div>
 		
 		<div class="holder">
-			<textarea placeholder="Type your message here..."></textarea>
+			<textarea placeholder="Daten hier eingeben..."></textarea>
 			<div style="height:40px;"></div>
-			<input class="pwd" type="password" placeholder="Enter Password. Keep empty if don't want to." value="" />
+			<input class="pwd" type="password" placeholder="Zusätzlich mit Passwort schützen (optional)" value="" />
 			<div style="height:30px;"></div>
 			<div align="center">
-				<div class="radioButton" data-group="format" data-value="1800">30 Minutes</div>
-				<div class="radioButton" data-group="format" data-value="3600">1 Hour</div>
-				<div class="radioButton" data-group="format" data-value="21600">6 Hour</div>
-				<div class="radioButton" data-group="format" data-value="86400">1 Day</div>
-				<div class="radioButton" data-group="format" data-value="259200" data-active="true">3 Day</div>
-				<div class="radioButton" data-group="format" data-value="604800">1 Week</div>
-				<div class="radioButton" data-group="format" data-value="2592000">1 Month</div>
+				<div class="radioButton" data-group="format" data-value="1800">30 Minuten</div>
+				<div class="radioButton" data-group="format" data-value="3600">1 Stunde</div>
+				<div class="radioButton" data-group="format" data-value="21600">6 Stunden</div>
+				<div class="radioButton" data-group="format" data-value="86400">1 Tag</div>
+				<div class="radioButton" data-group="format" data-value="259200" data-active="true">3 Tage</div>
+				<div class="radioButton" data-group="format" data-value="604800">1 Woche</div>
+				<div class="radioButton" data-group="format" data-value="2592000">1 Monat</div>
 			</div>
 			<div style="height:30px;"></div>
 			<button>Share</button>
@@ -103,9 +103,9 @@
 					
 					// Clear main div element and append new elements in it
 					$(".holder").empty();
-					$(".holder").append('<div class="description">Click on Copy Link button or select and copy link manually. Please, note that content can be viewed only once and will be deleted from server after opening this link.</div>');
+					$(".holder").append('<div class="description">Klicke auf den "Link kopieren" Button oder markiere den Link von Hand. Bitte beachten, dass der Inhalt nur einmal angeschaut werden kann und nach dem Öffnen vom Server gelöscht wird.</div>');
 					$(".holder").append('<div class="link">'+link+'</div>');
-					$(".holder").append('<div class="copy"><button>Copy Link</button></div>');
+					$(".holder").append('<div class="copy"><button>Link kopieren</button></div>');
 					
 					// I made clipboard.swf long time ago from Online flash (swf) maker. Don't remember site name.
 					$(".holder>.copy").append('<embed menu="false" wmode="transparent" type="application/x-shockwave-flash" allowfullscreen="false" flashvars="text='+link+'" src="clipboard.swf" />');
